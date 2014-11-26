@@ -64,7 +64,8 @@
 
         return ($href
           && $href.length
-          && $href.is(':visible')
+          //This visible checking is not essential.
+          //&& $href.is(':visible')
           && [[$href[offsetMethod]().top + offsetBase, href]]) || null
       })
       .sort(function (a, b) { return a[0] - b[0] })
