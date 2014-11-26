@@ -28,7 +28,7 @@
           this.$element.trigger('loaded.bs.modal')
         }, this))
     }
-  }
+  }p
 
   Modal.VERSION  = '3.3.1'
 
@@ -254,7 +254,8 @@
 
   Modal.prototype.setScrollbar = function () {
     var bodyPad = parseInt((this.$body.css('padding-right') || 0), 10)
-    if (this.bodyIsOverflowing) this.$body.css('padding-right', bodyPad + this.scrollbarWidth)
+    //Seriously, I don't think this padding-right is useful in most of my projects.
+    //if (this.bodyIsOverflowing) this.$body.css('padding-right', bodyPad + this.scrollbarWidth)
   }
 
   Modal.prototype.resetScrollbar = function () {
